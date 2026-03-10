@@ -8,4 +8,7 @@ public static class StatisticsHelper
 
         return sum;
     }
+    public static double Average(int[] values){
+    	return (double)Sum(values) / values.Length;
+    }
 }
