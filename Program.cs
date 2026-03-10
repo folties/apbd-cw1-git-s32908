@@ -1,5 +1,6 @@
 
-Console.WriteLine("Conflict appear :>");
+Console.WriteLine("Conflict appear, bye, world :>");
+
 
 Console.WriteLine("Enter numbers separated by space:");
 var input = Console.ReadLine();
