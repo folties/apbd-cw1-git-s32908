@@ -8,7 +8,15 @@ public static class StatisticsHelper
 
         return sum;
     }
-    public static double Average(int[] values){
-    	return (double)Sum(values) / values.Length;
-    }
+    public static double CalculateAverage(int[] values)
+{
+    if (values == null || values.Length == 0)
+        throw new ArgumentException("Array cannot be empty");
+
+    int sum = 0;
+    foreach (var value in values)
+        sum += value;
+
+    return (double)sum / values.Length;
+}
 }
